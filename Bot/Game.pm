@@ -52,9 +52,9 @@ sub get_allowed_directions {
 
   my $directions = {
     right => Bot::Point->new(x => $x + 1, y => $y),
-		left  => Bot::Point->new(x => $x - 1, y => $y),
-		up    => Bot::Point->new(x => $x, y => $y - 1),
-		down  => Bot::Point->new(x => $x, y => $y + 1),
+    left  => Bot::Point->new(x => $x - 1, y => $y),
+    up    => Bot::Point->new(x => $x, y => $y - 1),
+    down  => Bot::Point->new(x => $x, y => $y + 1),
   };
 
   while (my ($k, $p) = each %$directions) {

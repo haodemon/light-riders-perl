@@ -15,9 +15,6 @@ has ['x', 'y'] => (is => 'rw', isa => 'Maybe[Int]');
 has 'max'    => (is => 'ro', default => 15);
 has 'min'    => (is => 'ro', default => 0);
 
-    #  return 1 if
-    # (($point->x <= 15 && $point->x >= 0)
-    #  && ($point->y <= 15 &    & $point->y >= 0));
 
 sub is_allowed {
   my $self = shift;
